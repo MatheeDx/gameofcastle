@@ -1,0 +1,26 @@
+using UnityEngine;
+
+public class TurretFire : MonoBehaviour {
+    public Rigidbody2D Just_A_Bullet;
+    TurretEngine TurretEng = new TurretEngine();
+
+    //Скорость снаряда
+    float timer = 0;
+    float speed = 1;
+    float reloadTime = 2;
+
+    void Update() {
+        float rand = Random.value/2;
+        timer += Time.deltaTime;
+        //Клик мыши
+        if (Input.GetButtonDown("Fire1") && (timer > reloadTime)) {
+            timer = 0;
+
+            //Создание снаряда
+            Rigidbody2D bullet = Instantiate(Just_A_Bullet, transform.position + new Vector3(0, 0, (float) 0.1), transform.rotation);
+
+            //Придаем снаряду импульс
+            bullet.velocity = transform.right * (speed - (float) 0.25 + rand);
+        }
+    }
+}
