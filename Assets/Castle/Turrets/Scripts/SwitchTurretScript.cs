@@ -33,12 +33,20 @@ public class SwitchTurretScript : MonoBehaviour {
 
     //Меняем туррели по нажатии кнопок
     public void TurretOn() {
+        if (pauseMenu.pause)
+        {
+            return;
+        }
         SwitchTurret("Cannon", false);
         SwitchTurret("Turret", true);
         
     }
 
     public void CannonOn() {
+        if (pauseMenu.pause)
+        {
+            return;
+        }
         SwitchTurret("Cannon", true);
         SwitchTurret("Turret", false);
     }
@@ -53,6 +61,7 @@ public class SwitchTurretScript : MonoBehaviour {
         {
             return;
         }
+
         TurretBtn.onClick.AddListener(TurretOn);
         CannonBtn.onClick.AddListener(CannonOn);
 
