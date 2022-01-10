@@ -22,7 +22,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -36,10 +35,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -72,23 +69,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1526}
+      Script: {instanceID: 1616}
     - Class: 114
-      Script: {instanceID: 2250}
+      Script: {instanceID: 2340}
     - Class: 114
-      Script: {instanceID: 2678}
+      Script: {instanceID: 2768}
     - Class: 114
-      Script: {instanceID: 2852}
+      Script: {instanceID: 2942}
     - Class: 114
-      Script: {instanceID: 3084}
+      Script: {instanceID: 3174}
     - Class: 114
-      Script: {instanceID: 3332}
+      Script: {instanceID: 3422}
     - Class: 114
-      Script: {instanceID: 3450}
+      Script: {instanceID: 3540}
     - Class: 114
-      Script: {instanceID: 3502}
+      Script: {instanceID: 3592}
     - Class: 114
-      Script: {instanceID: 4716}
+      Script: {instanceID: 4806}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -143,51 +140,51 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1478}
+      Script: {instanceID: 1568}
     - Class: 114
-      Script: {instanceID: 1526}
+      Script: {instanceID: 1616}
     - Class: 114
-      Script: {instanceID: 1554}
+      Script: {instanceID: 1644}
     - Class: 114
-      Script: {instanceID: 2250}
+      Script: {instanceID: 2340}
     - Class: 114
-      Script: {instanceID: 2374}
+      Script: {instanceID: 2464}
     - Class: 114
-      Script: {instanceID: 2678}
+      Script: {instanceID: 2768}
     - Class: 114
-      Script: {instanceID: 2782}
+      Script: {instanceID: 2872}
     - Class: 114
-      Script: {instanceID: 2852}
+      Script: {instanceID: 2942}
     - Class: 114
-      Script: {instanceID: 3084}
+      Script: {instanceID: 3174}
     - Class: 114
-      Script: {instanceID: 3332}
+      Script: {instanceID: 3422}
     - Class: 114
-      Script: {instanceID: 3354}
+      Script: {instanceID: 3444}
     - Class: 114
-      Script: {instanceID: 3450}
+      Script: {instanceID: 3540}
     - Class: 114
-      Script: {instanceID: 3772}
+      Script: {instanceID: 3862}
     - Class: 114
-      Script: {instanceID: 4006}
+      Script: {instanceID: 4096}
     - Class: 114
-      Script: {instanceID: 4564}
+      Script: {instanceID: 4654}
     - Class: 114
-      Script: {instanceID: 4668}
+      Script: {instanceID: 4758}
     - Class: 114
-      Script: {instanceID: 4716}
+      Script: {instanceID: 4806}
     - Class: 114
-      Script: {instanceID: 4854}
+      Script: {instanceID: 4944}
     - Class: 114
-      Script: {instanceID: 5484}
+      Script: {instanceID: 5574}
     - Class: 114
-      Script: {instanceID: 5650}
+      Script: {instanceID: 5740}
     - Class: 114
-      Script: {instanceID: 5694}
+      Script: {instanceID: 5784}
     - Class: 114
-      Script: {instanceID: 5812}
+      Script: {instanceID: 5800}
     - Class: 114
-      Script: {instanceID: 1336340}
+      Script: {instanceID: 5904}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -795,6 +792,12 @@ ScriptsOnlyBuild:
     className: PauseMenu
   - hash:
       serializedVersion: 2
+      Hash: c491ee4ec2ed38dbe5f209f15c5aa13c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BGMover
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -817,15 +820,9 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BulletBoom
-  - hash:
-      serializedVersion: 2
-      Hash: c491ee4ec2ed38dbe5f209f15c5aa13c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BGMover
   platform: 19
   scenePathNames:
   - Assets/Scenes/FirstMenu.unity
   - Assets/Scenes/Game.unity
-  playerPath: "C:/Users/1/OneDrive/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/\u0417\u0430\u043C\u043A\u0438/Build/\u0418\u0433\u0440\u0430
-    \u0432 \u0437\u0430\u043C\u043A\u0438 2D.exe"
+  playerPath: "D:/gameofcastle/Build/\u0418\u0433\u0440\u0430 \u0432 \u0437\u0430\u043C\u043A\u0438
+    2D.exe"

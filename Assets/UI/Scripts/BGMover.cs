@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BGMover : MonoBehaviour
@@ -27,10 +25,9 @@ public class BGMover : MonoBehaviour
         MouseW = mousePos.x / Screen.width;
         MouseH = mousePos.y / Screen.height;
         
-
         if (MouseW >= 0 && MouseW <= 1 && MouseH >= 0 && MouseH <= 1)
         {
-            level1.position = level1Pos + new Vector3(Wlevel1/2 - Wlevel1 * MouseW, Hlevel1 / 2 - Hlevel1 * MouseH, 0);
+            level1.position = level1Pos + new Vector3(Wlevel1 / 2 - Wlevel1 * MouseW, Hlevel1 / 2 - Hlevel1 * MouseH, 0);
             level2.position = level2Pos + new Vector3(Wlevel2 / 2 - Wlevel2 * MouseW, Hlevel2 / 2 - Hlevel2 * MouseH, 0);
         }   
     }
