@@ -20,7 +20,7 @@ public class CastleScript : MonoBehaviour
         for (double i = 0; i <= 1.5; i += Time.deltaTime)
         {
             gameOverText.alpha = (float) (i / 1.5);
-            Debug.Log(i);
+
             yield return new WaitForEndOfFrame();
         }
         for (double i = 0; i <= 0.5; i += Time.deltaTime) { yield return new WaitForEndOfFrame(); }
