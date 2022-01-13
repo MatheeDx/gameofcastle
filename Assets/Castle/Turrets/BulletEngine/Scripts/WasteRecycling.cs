@@ -13,6 +13,11 @@ public class WasteRecycling : MonoBehaviour {
             //Каждый фрейм к счетчику добавляется временная разница между фреймами (секундомер)
             timer += Time.deltaTime;
 
+            if (timer > 0.6f)
+            {
+                Destroy(gameObject.GetComponent<Collider2D>());
+            }
+
             //Остатки от снаряда удаляются из игровогго мира спустя установленное время (дал секунду чтобы проиграла полная анимация взрыва снаряда)
             if (timer > time) {
                 Destroy(gameObject);

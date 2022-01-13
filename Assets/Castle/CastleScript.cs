@@ -20,10 +20,9 @@ public class CastleScript : MonoBehaviour
         for (double i = 0; i <= 1.5; i += Time.deltaTime)
         {
             gameOverText.alpha = (float) (i / 1.5);
-
             yield return new WaitForEndOfFrame();
         }
-        for (double i = 0; i <= 0.5; i += Time.deltaTime) { yield return new WaitForEndOfFrame(); }
+        yield return new WaitForSeconds((float)0.5);
         for (double i = 0; i <= 1; i += Time.deltaTime)
         {
             gameOverBtn.alpha = (float) (i / 1);

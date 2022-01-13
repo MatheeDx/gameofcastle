@@ -37,11 +37,8 @@ public class ZumbieControl : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D target) {
         if (target.tag == "boom") {
             //дамаг от сплэша
-            float dmg = 4f;
+            float dmg = 7f;
             hp -= dmg;
-            
-            //после удара удаляется коллайдер, чтобы не было больше урона
-            Destroy(target.GetComponent<Collider2D>());
             
             //Изменение шкалы здоровья
             hpBar.fillAmount = (float)hp / maxHp;
