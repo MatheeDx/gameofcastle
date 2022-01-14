@@ -11,11 +11,11 @@ public class CastleScript : MonoBehaviour
     public CanvasGroup gameOverBtn;
     [HideInInspector]public float hp;
     bool f = false;
-    public PauseMenu pauseMenu;
+    //public PauseMenu pauseMenu;
 
     public IEnumerator gameOver()
     {
-        pauseMenu.pause = true;
+        PauseMenu.pause = true;
         gameOverText.gameObject.SetActive(true);
         for (double i = 0; i <= 1.5; i += Time.deltaTime)
         {

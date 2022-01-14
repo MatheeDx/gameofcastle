@@ -53,23 +53,23 @@
     <UnityVersion>2020.3.21f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Enemies\EnemyMaker.cs" />
+    <Compile Include="Assets\Enemies\Scripts\EnemyMaker.cs" />
     <Compile Include="Assets\Castle\Turrets\Scripts\TurretFire.cs" />
-    <Compile Include="Assets\Enemies\Zumbie\ZumbieControl.cs" />
-    <Compile Include="Assets\Castle\Turrets\BulletEngine\Scripts\BulletRotation.cs" />
+    <Compile Include="Assets\Enemies\Scripts\ZumbieControl.cs" />
+    <Compile Include="Assets\Castle\Turrets\Missles\Scripts\BulletRotation.cs" />
     <Compile Include="Assets\Castle\Turrets\Scripts\SwitchTurretScript.cs" />
-    <Compile Include="Assets\FirstMenu\FMenuEngine.cs" />
+    <Compile Include="Assets\UI\Scripts\FMenuEngine.cs" />
     <Compile Include="Assets\Castle\Turrets\Scripts\ReloadScript.cs" />
-    <Compile Include="Assets\Castle\Turrets\BulletEngine\Scripts\BulletHit.cs" />
+    <Compile Include="Assets\Castle\Turrets\Missles\Scripts\BulletHit.cs" />
     <Compile Include="Assets\Castle\Turrets\Scripts\TurretEngine.cs" />
-    <Compile Include="Assets\Castle\Turrets\BulletEngine\Scripts\WasteRecycling.cs" />
+    <Compile Include="Assets\Castle\Turrets\Missles\Scripts\ExplosionWork.cs" />
     <Compile Include="Assets\UI\Scripts\AppFun.cs" />
-    <Compile Include="Assets\Enemies\Zumbie\ZumbieHit.cs" />
+    <Compile Include="Assets\Enemies\Scripts\ZumbieHit.cs" />
     <Compile Include="Assets\Castle\CastleScript.cs" />
     <Compile Include="Assets\UI\Scripts\GameOver.cs" />
     <Compile Include="Assets\UI\Scripts\PauseMenu.cs" />
-    <Compile Include="Assets\UI\Scripts\BGMover.cs" />
-    <Compile Include="Assets\Castle\Turrets\BulletEngine\Scripts\BulletBoom.cs" />
+    <Compile Include="Assets\BG\BGMover.cs" />
+    <Compile Include="Assets\Castle\Turrets\Missles\Scripts\BulletBoom.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

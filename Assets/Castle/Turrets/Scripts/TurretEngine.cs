@@ -11,11 +11,10 @@ public class TurretEngine : MonoBehaviour {
     public float angleUp;
     public float angleDown;
     public Rigidbody2D sprite;
-    public PauseMenu pauseMenu;
 
 
     void Update() {
-        if (pauseMenu.pause)
+        if (PauseMenu.pause)
         {
             return;
         }

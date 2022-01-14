@@ -11,13 +11,7 @@ public class AppFun : MonoBehaviour
     public void startGame()
     {
         SceneManager.LoadScene("Game");
-        GetComponent<PauseMenu>().pause = false;
-        Time.timeScale = 1;
-    }
-
-    public void startGameGV()
-    {
-        SceneManager.LoadScene("Game");
+        PauseMenu.pause = false;
         Time.timeScale = 1;
     }
 

@@ -6,7 +6,6 @@ public class SwitchTurretScript : MonoBehaviour {
     public Button TurretBtn;
     public Transform actBtn;
     public string Flag = "Cannon";
-    public PauseMenu pauseMenu;
 
     //Устанавливаем функцию, которая по входным аргументам отключает или включает определенную туррель
     void SwitchTurret (string name, bool value) {
@@ -33,7 +32,7 @@ public class SwitchTurretScript : MonoBehaviour {
 
     //Меняем туррели по нажатии кнопок
     public void TurretOn() {
-        if (pauseMenu.pause)
+        if (PauseMenu.pause)
         {
             return;
         }
@@ -43,7 +42,7 @@ public class SwitchTurretScript : MonoBehaviour {
     }
 
     public void CannonOn() {
-        if (pauseMenu.pause)
+        if (PauseMenu.pause)
         {
             return;
         }
@@ -57,7 +56,7 @@ public class SwitchTurretScript : MonoBehaviour {
     }
 
     void Update() {
-        if (pauseMenu.pause)
+        if (PauseMenu.pause)
         {
             return;
         }

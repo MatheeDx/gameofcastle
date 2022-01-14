@@ -8,7 +8,7 @@ public class GameOver : MonoBehaviour
 
     private void Update()
     {
-        restart.onClick.AddListener(GetComponent<AppFun>().startGameGV);
+        restart.onClick.AddListener(GetComponent<AppFun>().startGame);
         exit.onClick.AddListener(GetComponent<AppFun>().exitGame);
     }
 }

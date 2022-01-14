@@ -7,8 +7,8 @@ public class PauseMenu : MonoBehaviour
     public Button options;
     public Button mainMenu;
     public Button exit;
-    public bool pause = false;
-
+    public static bool pause = false;
+    public Canvas bg;
 
     
     void Update()
@@ -23,12 +23,14 @@ public class PauseMenu : MonoBehaviour
             {
                 pause = false;
                 GetComponent<Canvas>().enabled = false;
+                bg.enabled = false;
                 Time.timeScale = 1;
             } 
             else 
             {
                 pause = true;
                 GetComponent<Canvas>().enabled = true;
+                bg.enabled = true;
                 Time.timeScale = 0;
             }
         }

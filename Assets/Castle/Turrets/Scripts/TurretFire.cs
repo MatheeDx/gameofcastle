@@ -7,7 +7,6 @@ public class TurretFire : MonoBehaviour {
     TurretEngine Engine;
     ReloadScript Rld;
     RaycastHit2D hit;
-    public PauseMenu pauseMenu;
 
     void Awake() {
         //Берем свойства из класса TurretEngine
@@ -25,7 +24,7 @@ public class TurretFire : MonoBehaviour {
     }
 
     void Update() {
-        if (pauseMenu.pause)
+        if (PauseMenu.pause)
         {
             return;
         }
@@ -53,7 +52,7 @@ public class TurretFire : MonoBehaviour {
             Rigidbody2D bullet = Instantiate(Just_A_Bullet, transform.position + new Vector3(0, 0, (float) 0.1), Quaternion.AngleAxis( angleTurret - spread / 2 + rand, Vector3.forward));
 
             //Присваиваем значение дамага из класса TurretEngine снаряду
-            bullet.GetComponent<BulletRotation>().dmg = Engine.turretDmg;
+            bullet.GetComponent<BulletHit>().dmg = Engine.turretDmg;
 
             //Придаем снаряду импульс
             bullet.velocity = bullet.transform.right * (speed);

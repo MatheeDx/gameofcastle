@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - BulletRotation
     - CastleScript
     - EnemyMaker
+    - ExplosionWork
     - FMenuEngine
     - GameOver
     - PauseMenu
@@ -15,13 +16,13 @@ ScriptsOnlyBuild:
     - SwitchTurretScript
     - TurretEngine
     - TurretFire
-    - WasteRecycling
     - ZumbieControl
     - ZumbieHit
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -69,23 +70,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1616}
+      Script: {instanceID: 1526}
     - Class: 114
-      Script: {instanceID: 2340}
+      Script: {instanceID: 2250}
     - Class: 114
-      Script: {instanceID: 2768}
+      Script: {instanceID: 2678}
     - Class: 114
-      Script: {instanceID: 2942}
+      Script: {instanceID: 2852}
     - Class: 114
-      Script: {instanceID: 3174}
+      Script: {instanceID: 3084}
     - Class: 114
-      Script: {instanceID: 3422}
+      Script: {instanceID: 3332}
     - Class: 114
-      Script: {instanceID: 3540}
+      Script: {instanceID: 3450}
     - Class: 114
-      Script: {instanceID: 3592}
+      Script: {instanceID: 3502}
     - Class: 114
-      Script: {instanceID: 4806}
+      Script: {instanceID: 4716}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -140,51 +141,51 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1568}
+      Script: {instanceID: 1478}
     - Class: 114
-      Script: {instanceID: 1616}
+      Script: {instanceID: 1526}
     - Class: 114
-      Script: {instanceID: 1644}
+      Script: {instanceID: 1554}
     - Class: 114
-      Script: {instanceID: 2340}
+      Script: {instanceID: 2250}
     - Class: 114
-      Script: {instanceID: 2464}
+      Script: {instanceID: 2374}
     - Class: 114
-      Script: {instanceID: 2768}
+      Script: {instanceID: 2678}
     - Class: 114
-      Script: {instanceID: 2872}
+      Script: {instanceID: 2782}
     - Class: 114
-      Script: {instanceID: 2942}
+      Script: {instanceID: 2852}
     - Class: 114
-      Script: {instanceID: 3174}
+      Script: {instanceID: 3084}
     - Class: 114
-      Script: {instanceID: 3422}
+      Script: {instanceID: 3332}
     - Class: 114
-      Script: {instanceID: 3444}
+      Script: {instanceID: 3354}
     - Class: 114
-      Script: {instanceID: 3540}
+      Script: {instanceID: 3450}
     - Class: 114
-      Script: {instanceID: 3862}
+      Script: {instanceID: 3772}
     - Class: 114
-      Script: {instanceID: 4096}
+      Script: {instanceID: 4006}
     - Class: 114
-      Script: {instanceID: 4654}
+      Script: {instanceID: 4564}
     - Class: 114
-      Script: {instanceID: 4758}
+      Script: {instanceID: 4668}
     - Class: 114
-      Script: {instanceID: 4806}
+      Script: {instanceID: 4716}
     - Class: 114
-      Script: {instanceID: 4944}
+      Script: {instanceID: 4854}
     - Class: 114
-      Script: {instanceID: 5574}
+      Script: {instanceID: 5484}
     - Class: 114
-      Script: {instanceID: 5740}
+      Script: {instanceID: 5650}
     - Class: 114
-      Script: {instanceID: 5784}
+      Script: {instanceID: 5694}
     - Class: 114
-      Script: {instanceID: 5800}
+      Script: {instanceID: 5710}
     - Class: 114
-      Script: {instanceID: 5904}
+      Script: {instanceID: 5814}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -210,7 +211,7 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 51930a06ada530d77b4c0f1ef54e17f0
+      Hash: be6a42ca083f16673149b5d4c125b4d1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyMaker
@@ -228,7 +229,7 @@ ScriptsOnlyBuild:
     className: Image
   - hash:
       serializedVersion: 2
-      Hash: 77e65456447f10e97a0327e98aff25dd
+      Hash: 326e913bb373235204b4c07a1d3fe28b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TurretFire
@@ -354,7 +355,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 6dfef96f74321f0984dd336a9aad4187
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BulletRotation
@@ -456,7 +457,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: 9fc50f5d98b87bbbff9a0031eafdf2e4
+      Hash: 9e792393ac1960d978d8579b8e8344bf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SwitchTurretScript
@@ -546,7 +547,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 6dfef96f74321f0984dd336a9aad4187
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BulletHit
@@ -642,7 +643,7 @@ ScriptsOnlyBuild:
     className: SpriteShapeGeometryCache
   - hash:
       serializedVersion: 2
-      Hash: a135fd96ca619be30cb6cb5d2b4455fa
+      Hash: dec4c51983fab2204e8fc9a2d672b54a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TurretEngine
@@ -663,7 +664,7 @@ ScriptsOnlyBuild:
       Hash: bf4c0223f8b4ba77c267bab8a21ea27b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: WasteRecycling
+    className: ExplosionWork
   - hash:
       serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
@@ -756,7 +757,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 2fee0b2a108b3c3645d7f7ec1f3fcbcb
+      Hash: 81cea2ea236e028e4973adb2c6d63517
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CastleScript
@@ -786,7 +787,7 @@ ScriptsOnlyBuild:
     className: ActivationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: f56fbb84b94305b6eb9c19a0d30b4c08
+      Hash: dd4aa5096a526fb35cc6318926760db9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PauseMenu
